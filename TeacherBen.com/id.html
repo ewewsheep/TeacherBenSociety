@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teacher Ben Happy Society</title>
+  <style> 
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6fa;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #6ca0dc;
+      color: white;
+      text-align: center;
+      padding: 1.5em 0;
+    }
+    nav {
+      background-color: #507dbc;
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+      padding: 0.8em;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .mdiv {
+      max-width: 800px;
+      margin: 2em auto;
+      background: white;
+      padding: 2em;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #507dbc;
+    }
+    ul {
+      line-height: 1.8;
+    }
+    footer {
+      text-align: center;
+      padding: 1em 0;
+      background-color: #507dbc;
+      color: white;
+      margin-top: 2em;
+    }
+  </style>
+</head>
+
+
+
+<body>
+  <header>
+    <h1>Welcome to Teacher Ben Happy Sociey!</h1>
+    <p>Where kids come to learn and be educated :)</p>
+  </header>
+
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="id.html">GovIds</a>
+    <a href="behaviour.html">About</a>
+    <a href="News.html">News</a>
+    <a href="Sports.html">Sports</a>
+    <a href="Lessons.html">Lessons</a>
+  </nav>
+
+  <div class="mdiv">
+    <section id="intro">
+      <h2>What are our government ids?</h2>
+      <p>at the RTBS we value our citizens(pupils/staff) and in order to keep these people safe we have devised a system with ids to identify different citizens</p>
+      <p>if you would like to access your 🫵 id look below</p>
+      <p>🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽</p>
+    </section>
+  </div>
+
+  <div class="mdiv">
+    <section id="card">
+      <h2>Accessing Ids</h2>
+      <p>Each citizen of the RTBS is issued a personal identification code. Enter the code from your National Insurance Licence below to confirm your status and access your official record.</p>
+      <input id="idbox" type="text" style="height: 60px; font-size: 60px;font-weight: bolder;"/>
+      <br/>
+      <span style="color: transparent;">-</span>
+      <br/>
+      <button onclick="enteredid()" style="height: 80px;width: 160px;">
+        <span id="id-c" style="font-weight: bolder;">Confirm</span>
+      </button>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Teacher Ben Happy. All smiles reserved.</p>
+  </footer>
+
+  <script>
+    function enteredid() {
+      var b = document.getElementById("idbox").value
+      if (b == "!J4CK-W4TT!") {
+        window.location = "IDPAGES/ID-Jackwatt.html"
+      } else if (b == "*T3ACH3R-B3N*") {
+        window.location = "IDPAGES/ID-Benheath.html"}
+    }
+  </script>
+</body>
+</html>
